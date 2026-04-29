@@ -16,9 +16,9 @@
 
 ## 📘 Project Overview
 Agentic SOC is a practical implementation of a Security Operations Center (SOC) workflow that automates incident detection and response. Logs are ingested into Splunk, where correlation rules generate alerts for suspicious activities. Once triggered, n8n orchestrates workflows to enrich alerts using threat intelligence APIs like AbuseIPDB and VirusTotal.
-* Performs automated alert processing and enrichment
-* Correlates threat intelligence data for better context
-* Sends real-time alerts to Slack and creates Jira tickets
+* Performs automated alert processing and enrichment.
+* Correlates threat intelligence data for better context.
+* Sends real-time alerts to Slack and creates Jira tickets.
 This improves operational efficiency, reduces manual effort, and enables faster incident response.
 
 ---
@@ -59,14 +59,14 @@ This improves operational efficiency, reduces manual effort, and enables faster 
 ## 🔧 **Tools and Roles per Component:**
 | Component | Tools/Services | Purpose |
 | :--- | :--- | :--- |
-| **Log Generation** | Python | Simulates security events and attack logs to mimic real-world SOC scenarios for testing detection pipelines |
-| **SIEM** | Splunk | Ingests and analyzes logs, applies correlation rules, and triggers alerts based on suspicious patterns or anomalies | 
-| **Workflow Automation** | n8n | Acts as the orchestration layer, connecting different tools and automating alert handling and response workflows | 
-| **Threat Intelligence** | AbuseIPDB API | Checks IP reputation and provides context about potentially malicious sources involved in alerts | 
-| **Threat Intelligence** | VirusTotal API | Enriches alerts with file, URL, and hash-based threat intelligence for deeper analysis | 
-| **Notification System** | Slack | Sends real-time alerts to SOC teams, enabling quick visibility and response to incidents | 
-| **Incident Management** | Jira | Automatically creates and tracks incident tickets, helping maintain structured response and accountability | 
-| **Infrastructure** | Microsoft Azure | Provides cloud-based virtual machine environment to deploy and manage the complete SOC setup | 
+| **Log Generation** | Python | Simulates security events and attack logs to mimic real-world SOC scenarios for testing detection pipelines. |
+| **SIEM** | Splunk | Ingests and analyzes logs, applies correlation rules, and triggers alerts based on suspicious patterns or anomalies. | 
+| **Workflow Automation** | n8n | Acts as the orchestration layer, connecting different tools and automating alert handling and response workflows. | 
+| **Threat Intelligence** | AbuseIPDB API | Checks IP reputation and provides context about potentially malicious sources involved in alerts. | 
+| **Threat Intelligence** | VirusTotal API | Enriches alerts with file, URL, and hash-based threat intelligence for deeper analysis. | 
+| **Notification System** | Slack | Sends real-time alerts to SOC teams, enabling quick visibility and response to incidents. | 
+| **Incident Management** | Jira | Automatically creates and tracks incident tickets, helping maintain structured response and accountability. | 
+| **Infrastructure** | Microsoft Azure | Provides cloud-based virtual machine environment to deploy and manage the complete SOC setup. | 
 
 
 ---
@@ -96,9 +96,9 @@ This project was implemented as a practical SOC automation pipeline using **Splu
 1.  **Infrastructure Setup (Azure VM):** Ubuntu-based virtual machine where Splunk, n8n, and automation components are deployed.
 
 The entire environment was deployed on a cloud-based virtual machine.
-    * Created a VM on **Microsoft Azure**
-    * Operating System: **Ubuntu 22.04 LTS**
-    * Configured basic networking and SSH access
+    * Created a VM on **Microsoft Azure**.
+    * Operating System: **Ubuntu 22.04 LTS**.
+    * Configured basic networking and SSH access.
     * Installed required dependencies:
       - Python3
       - Node.js (for n8n)
@@ -121,16 +121,16 @@ This VM acts as the central SOC lab environment where all components are hosted 
 2.  **Splunk Setup (SIEM Configuration):** Splunk was used as the core SIEM platform for log ingestion and alert generation. 
 
      **Steps performed:**
-    * Installed and configured Splunk Enterprise
-    * Configured **HTTP Event Collector (HEC)** for real-time log ingestion
-    * Created indexes for storing logs
-    * Used **Search Processing Language (SPL)** to analyze logs
+    * Installed and configured Splunk Enterprise.
+    * Configured **HTTP Event Collector (HEC)** for real-time log ingestion.
+    * Created indexes for storing logs.
+    * Used **Search Processing Language (SPL)** to analyze logs.
       
     **Detection Logic:**
     * Defined correlation rules to detect:
       - Multiple failed login attempts
       - Suspicious IP activity
-    * Configured alerts to trigger when thresholds are exceeded
+    * Configured alerts to trigger when thresholds are exceeded.
 
 These alerts act as the entry point for automation.
 
@@ -263,35 +263,35 @@ This enables proper incident lifecycle management and tracking.
 *Automatically generated incident tickets with alert details, severity, and enrichment data.*
 
 8. **End-to-End Workflow Summary:**
-    * Python script generates simulated security logs
-    * Logs are ingested into Splunk
-    * Splunk applies correlation rules and triggers alerts
-    * Alert is sent to n8n via webhook
-    * n8n enriches data using AbuseIPDB and VirusTotal
-    * Rule-based logic classifies severity
-    * Slack notification is sent
-    * Jira ticket is created
+    * Python script generates simulated security logs.
+    * Logs are ingested into Splunk.
+    * Splunk applies correlation rules and triggers alerts.
+    * Alert is sent to n8n via webhook.
+    * n8n enriches data using AbuseIPDB and VirusTotal.
+    * Rule-based logic classifies severity.
+    * Slack notification is sent.
+    * Jira ticket is created.
 
 This completes the automated SOC detection and response pipeline.
   
 ---
 
 ## 🔍 **Detection**
-* **Log Ingestion:** Security events are generated via Python script and ingested into Splunk using HTTP Event Collector
-* **Correlation Rules:** Splunk uses predefined SPL queries to identify suspicious patterns like failed logins and anomalies
-* **Threshold-Based Alerts:** Alerts are triggered when event frequency exceeds defined thresholds indicating potential malicious activity
-* **Event Classification:** Detected events are categorized based on type such as brute-force, unauthorized access, or scanning
-* **SIEM Monitoring:** Continuous monitoring of ingested logs enables real-time detection of security incidents within the environment
+* **Log Ingestion:** Security events are generated via Python script and ingested into Splunk using HTTP Event Collector.
+* **Correlation Rules:** Splunk uses predefined SPL queries to identify suspicious patterns like failed logins and anomalies.
+* **Threshold-Based Alerts:** Alerts are triggered when event frequency exceeds defined thresholds indicating potential malicious activity.
+* **Event Classification:** Detected events are categorized based on type such as brute-force, unauthorized access, or scanning.
+* **SIEM Monitoring:** Continuous monitoring of ingested logs enables real-time detection of security incidents within the environment.
 
 ---
 
 ## 🛠️ **Response**
 Upon triggering an alert:
-* **Webhook Triggering:** Splunk alerts are forwarded to n8n via webhook to initiate automated response workflow execution
-* **Data Enrichment:** Alert data is enriched using AbuseIPDB and VirusTotal APIs for contextual threat intelligence insights
-* **Severity Assignment:** Rule-based logic assigns severity levels based on IP reputation and attack behavior patterns
+* **Webhook Triggering:** Splunk alerts are forwarded to n8n via webhook to initiate automated response workflow execution.
+* **Data Enrichment:** Alert data is enriched using AbuseIPDB and VirusTotal APIs for contextual threat intelligence insights.
+* **Severity Assignment:** Rule-based logic assigns severity levels based on IP reputation and attack behavior patterns.
 * **Notification Handling:** Processed alerts are sent to Slack channels to ensure real-time visibility for SOC teams.
-* **Incident Creation:** Jira tickets are automatically generated with enriched alert details for structured incident tracking
+* **Incident Creation:** Jira tickets are automatically generated with enriched alert details for structured incident tracking.
 
 ---
 
@@ -309,11 +309,11 @@ These MITRE ATT&CK techniques are included as metadata within simulated events a
 ---
 
 ## 🚀 Future Enhancements
-* **AI Integration:** Add LLM-based analysis for automated alert summarization and contextual incident understanding across workflows
-* **EDR Integration:** Integrate endpoint detection tools like Wazuh for deeper host-level visibility and threat detection capability
-* **MITRE Mapping:** Implement full MITRE ATT&CK mapping with dashboards and technique-based correlation in Splunk SIEM
-* **Real Traffic Simulation:** Use Kali Linux to generate real attack traffic instead of relying only on simulated logs
-* **Dashboard Visualization:** Build SOC dashboards in Splunk for better visualization of alerts, trends, and incident metrics
+* **AI Integration:** Add LLM-based analysis for automated alert summarization and contextual incident understanding across workflows.
+* **EDR Integration:** Integrate endpoint detection tools like Wazuh for deeper host-level visibility and threat detection capability.
+* **MITRE Mapping:** Implement full MITRE ATT&CK mapping with dashboards and technique-based correlation in Splunk SIEM.
+* **Real Traffic Simulation:** Use Kali Linux to generate real attack traffic instead of relying only on simulated logs.
+* **Dashboard Visualization:** Build SOC dashboards in Splunk for better visualization of alerts, trends, and incident metrics.
 
 ---
 
