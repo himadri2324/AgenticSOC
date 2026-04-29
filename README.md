@@ -111,7 +111,8 @@ This project was implemented as a practical SOC automation pipeline using **Splu
 
 2.  **Splunk Setup (SIEM Configuration):**
     Splunk was used as the core SIEM platform for log ingestion and alert generation. 
-    **Steps performed:**
+
+     **Steps performed:**
     * Installed and configured Splunk Enterprise
     * Enabled **data ingestion** using log files (simulated logs from Python)
     * Created indexes for storing logs
@@ -121,24 +122,24 @@ This project was implemented as a practical SOC automation pipeline using **Splu
       - Multiple failed login attempts
       - Suspicious IP activity
     * Configured alerts to trigger when thresholds are exceeded
-
-These alerts act as the entry point for automation
+    * These alerts act as the entry point for automation
 
 3.  **Log Generation using Python:**
     A custom Python script was created to simulate security events.
+
     **What the script does:**
     * Generates structured logs.
     * Simulates events such as:
       - Brute-force login attempts
       - Suspicious IP access
     * Writes logs continuously for Splunk ingestion
-
-This helps replicate a real SOC scenario without external traffic.
+    * This helps replicate a real SOC scenario without external traffic.
 
 Python script: 
 
 4.  **n8n Workflow Automation (Orchestration Layer):**
     n8n was used as the central orchestration engine to automate alert processing and        response actions after detection in Splunk.
+
     **Workflow Steps (as implemented):**
     *  Webhook Trigger:
        - Receives alert payload from Splunk
