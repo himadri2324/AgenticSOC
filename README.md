@@ -109,6 +109,7 @@ This project was implemented as a practical SOC automation pipeline using **Splu
       - Splunk Enterprise
 
 This VM acts as the central SOC lab environment where all components are hosted and connected.
+
 2.  **Splunk Setup (SIEM Configuration):**
     Splunk was used as the core SIEM platform for log ingestion and alert generation. 
     **Steps performed:**
