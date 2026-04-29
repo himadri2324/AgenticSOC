@@ -6,7 +6,7 @@
 ## 🎬 Demonstration
 <p align="center">
   <a href="" target="_blank">
-    <img src="https://img.icons8.com/color/96/video.png" alt="Watch Demo" />
+    <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Agentic%20SOC.mp4" alt="Watch Demo" />
     <br>
     <strong>Click to watch the demonstration video</strong>
   </a>
