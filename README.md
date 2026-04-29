@@ -81,7 +81,7 @@ This improves operational efficiency, reduces manual effort, and enables faster 
 ### 🖧 **Network Architecture Diagram:**
 <p align="center">
 <img src="https://github.com/himadri2324/Securex-soc/blob/main/Network%20Architecture%20Diagram.png?raw=true"
-  alt="Securex Network Architecture Diagram" width="750"/>
+  alt=" Network Architecture Diagram" width="750"/>
   </p>
 VMware-Based SOC Network Architecture Diagram.
 
@@ -90,36 +90,43 @@ VMware-Based SOC Network Architecture Diagram.
 ### 🏗️ **Architecture Flow Diagram:**
 <p align="center">
   <img src="https://github.com/himadri2324/Securex-soc/blob/main/Architecture-%20diagram.png?raw=true" 
-       alt="Securex SOC Architecture Diagram" width="750"/>
+       alt="Architecture flow Diagram" width="750"/>
 </p>
 End-to-end SOC detection flow for brute-force authentication attacks.
 
 ---
 
-## ⚙️ **Detailed Setup Steps**
-1.  **Environment Preparation:**
-    * Install **VMware Workstation**
-    * Create Windows and Ubuntu virtual machines
-    * Configure NAT-based networking
-2.  **Windows Security Logging:**
+## ⚙️ **Detailed Setup & Implementation**
+This project was implemented as a practical SOC automation pipeline using **Splunk (SIEM), n8n (workflow orchestration), Python (log generation), and external threat intelligence APIs**. The setup focuses on simulating real-world alert handling and automating response actions.
+1.  **Infrastructure Setup (Azure VM):**
+    The entire environment was deployed on a cloud-based virtual machine.
+    * Created a VM on **Microsoft Azure**
+    * Operating System: **Ubuntu 22.04 LTS**
+    * Configured basic networking and SSH access
+    * Installed required dependencies:
+      - Python3
+      - Node.js (for n8n)
+      - Splunk Enterprise
+    This VM acts as the central SOC lab environment where all components are hosted and connected.
+3.  **Windows Security Logging:**
     * Enable **Audit Logon Events**
     * Generate failed login attempts
     * Validate Event ID **4625** using Event Viewer
-3.  **Log Collection Configuration:**
+4.  **Log Collection Configuration:**
     * Install Winlogbeat / Elastic Agent on Windows
     * Configure output to Elasticsearch
     * Verify log ingestion in Kibana
-4.  **SIEM Setup:**
+5.  **SIEM Setup:**
     *  Install Elasticsearch and Kibana on Linux
     *  Enable SIEM features
     *  Configure brute-force detection rules
-5. **Attack Simulation:**
+6. **Attack Simulation:**
     * Perform repeated failed authentication attempts
     * Simulate credential guessing behavior
-6.  **Alert Monitoring:**
+7.  **Alert Monitoring:**
     *  Observe alert generation in Kibana SIEM
     *  Analyze event correlation and timelines
-7. **Documentation & Demonstration**
+8. **Documentation & Demonstration**
     * Record live SOC workflow using OBS Studio
     * Capture alerts and dashboards  
 
