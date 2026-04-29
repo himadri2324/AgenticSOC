@@ -4,6 +4,7 @@
 ---
 
 ## 🎬 Demonstration
+[![Watch Demo](https://img.youtube.com/vi/Neu0MBCNLaE/0.jpg)](https://www.youtube.com/watch?v=Neu0MBCNLaE)
 <p align="center">
   <a href="https://www.youtube.com/watch?v=Neu0MBCNLaE" target="_blank">
     <img src="https://img.icons8.com/color/96/video.png" alt="Watch Demo" />
@@ -116,7 +117,7 @@ This VM acts as the central SOC lab environment where all components are hosted 
   <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/azure-vm.png" width="900"/>
 </p>
 
-*Azure virtual machine used in the project AgenticSOC.*
+*Azure virtual machine hosting the SOC automation environment..*
 
 2.  **Splunk Setup (SIEM Configuration):** Splunk was used as the core SIEM platform for log ingestion and alert generation. 
 
@@ -292,6 +293,7 @@ Upon triggering an alert:
 * **Severity Assignment:** Rule-based logic assigns severity levels based on IP reputation and attack behavior patterns.
 * **Notification Handling:** Processed alerts are sent to Slack channels to ensure real-time visibility for SOC teams.
 * **Incident Creation:** Jira tickets are automatically generated with enriched alert details for structured incident tracking.
+> **Result:** Automated SOC pipeline successfully detects threats, enriches alerts, and triggers Slack notifications and Jira tickets, reducing manual effort and response time.
 
 ---
 
