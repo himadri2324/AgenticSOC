@@ -4,7 +4,7 @@
 ---
 
 ## 🎬 Demonstration
-[![Watch Demo](https://studio.youtube.com/video/Neu0MBCNLaE/edit)](https://studio.youtube.com/video/Neu0MBCNLaE/edit)
+[![Watch Demo](https://www.youtube.com/watch?v=Neu0MBCNLaE)](https://www.youtube.com/watch?v=Neu0MBCNLaE)
 
 ---
 
