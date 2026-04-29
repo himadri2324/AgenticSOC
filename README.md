@@ -124,6 +124,7 @@ This VM acts as the central SOC lab environment where all components are hosted 
     * Configured alerts to trigger when thresholds are exceeded
 
 These alerts act as the entry point for automation
+
 3.  **Log Generation using Python:**
     A custom Python script was created to simulate security events.
     **What the script does:**
