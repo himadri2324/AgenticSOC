@@ -80,7 +80,7 @@ This improves operational efficiency, reduces manual effort, and enables faster 
 
 ### 🖧 **Network Architecture Diagram:**
 <p align="center">
-<img src="https://github.com/himadri2324/Securex-soc/blob/main/Network%20Architecture%20Diagram.png?raw=true"
+<img src="https://github.com/himadri2324/AgenticSOC/blob/main/Network%20Architecture.png?raw=true"
   alt=" Network Architecture Diagram" width="750"/>
   </p>
 VMware-Based SOC Network Architecture Diagram.
@@ -89,7 +89,7 @@ VMware-Based SOC Network Architecture Diagram.
 
 ### 🏗️ **Architecture Flow Diagram:**
 <p align="center">
-  <img src="https://github.com/himadri2324/Securex-soc/blob/main/Architecture-%20diagram.png?raw=true" 
+  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Architecture%20flow%20diagram.png?raw=true" 
        alt="Architecture flow Diagram" width="750"/>
 </p>
 End-to-end SOC detection flow for brute-force authentication attacks.
