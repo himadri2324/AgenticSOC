@@ -26,6 +26,7 @@ This improves operational efficiency, reduces manual effort, and enables faster 
 ## 📘 Related Medium Articles
 
 - **AI Agents and the Rise of the Agentic SOC**
+
 https://medium.com/@himadrisingh061/ai-agents-and-the-rise-of-the-agentic-soc-f19122b4eca3
 
 - **From Zero to Running Server: My Hands-on Journey with Microsoft Azure VM**
@@ -42,6 +43,7 @@ https://medium.com/@himadrisingh061/n8n-ai-building-smarter-workflows-instead-of
 https://medium.com/@himadrisingh061/slack-in-a-soc-environment-turning-alerts-into-real-time-security-action-4f80e75229e1
 
 - **Jira: The Backbone of Modern Project Management**
+
 https://medium.com/@himadrisingh061/jira-the-backbone-of-modern-project-management-74f1b732efb1
 
 ---
