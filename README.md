@@ -109,10 +109,20 @@ This project was implemented as a practical SOC automation pipeline using **Splu
       - Splunk Enterprise
 
 This VM acts as the central SOC lab environment where all components are hosted and connected.
-3.  **Windows Security Logging:**
-    * Enable **Audit Logon Events**
-    * Generate failed login attempts
-    * Validate Event ID **4625** using Event Viewer
+2.  **Splunk Setup (SIEM Configuration):**
+    Splunk was used as the core SIEM platform for log ingestion and alert generation. 
+    **Steps performed:**
+    * Installed and configured Splunk Enterprise
+    * Enabled **data ingestion** using log files (simulated logs from Python)
+    * Created indexes for storing logs
+    * Used Search Processing Language (SPL) to analyze logs
+    **Detection Logic:**
+    * Defined correlation rules to detect:
+      - Multiple failed login attempts
+      - Suspicious IP activity
+   * Configured alerts to trigger when thresholds are exceeded
+
+These alerts act as the entry point for automation
 4.  **Log Collection Configuration:**
     * Install Winlogbeat / Elastic Agent on Windows
     * Configure output to Elasticsearch
