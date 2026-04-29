@@ -98,19 +98,7 @@ End-to-end flow illustrating alert processing, enrichment, and automated respons
 
 ## ⚙️ **Detailed Setup & Implementation**
 This project was implemented as a practical SOC automation pipeline using **Splunk (SIEM), n8n (workflow orchestration), Python (log generation), and external threat intelligence APIs**. The setup focuses on simulating real-world alert handling and automating response actions.
-1.  **Infrastructure Setup (Azure VM):**
-
-<p align="center">
-  <img src="./screenshots/azure-resource.png" width="900"/>
-</p>
-
-Azure resource group hosting the SOC lab environment.
-
-<p align="center">
-  <img src="./screenshots/azure-vm.png" width="900"/>
-</p>
-
-Ubuntu-based virtual machine where Splunk, n8n, and automation components are deployed.
+1.  **Infrastructure Setup (Azure VM):** Ubuntu-based virtual machine where Splunk, n8n, and automation components are deployed.
 
 The entire environment was deployed on a cloud-based virtual machine.
     * Created a VM on **Microsoft Azure**
@@ -122,6 +110,18 @@ The entire environment was deployed on a cloud-based virtual machine.
       - Splunk Enterprise
 
 This VM acts as the central SOC lab environment where all components are hosted and connected.
+
+<p align="center">
+  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/azure-resource.png" width="900"/>
+</p>
+
+Azure resource group hosting the SOC lab environment.
+
+<p align="center">
+  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/azure-vm.png" width="900"/>
+</p>
+
+Ubuntu-based virtual machine where Splunk, n8n, and automation components are deployed.
 
 2.  **Splunk Setup (SIEM Configuration):** Splunk was used as the core SIEM platform for log ingestion and alert generation. 
 
