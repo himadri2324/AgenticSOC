@@ -80,19 +80,19 @@ This improves operational efficiency, reduces manual effort, and enables faster 
 
 ### 🖧 **Network Architecture Diagram:**
 <p align="center">
-<img src="https://github.com/himadri2324/AgenticSOC/blob/main/Network%20Architecture.png?raw=true"
+<img src="https://github.com/himadri2324/AgenticSOC/blob/main/diagrams/Network%20Architecture.png"
   alt=" Network Architecture Diagram" width="750"/>
   </p>
-VMware-Based SOC Network Architecture Diagram.
+High-level architecture showing how logs flow from generation to SIEM detection and automation layers.
 
 ---
 
 ### 🏗️ **Architecture Flow Diagram:**
 <p align="center">
-  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Architecture%20flow%20diagram.png?raw=true" 
+  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/diagrams/Architecture%20flow%20diagram.png" 
        alt="Architecture flow Diagram" width="750"/>
 </p>
-End-to-end SOC detection flow for brute-force authentication attacks.
+End-to-end flow illustrating alert processing, enrichment, and automated response across the SOC pipeline.
 
 ---
 
