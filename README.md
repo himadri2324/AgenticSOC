@@ -150,8 +150,19 @@ Python script:
          * Username
          * Event type
          * Timestamp
-      - Threat Intelligence Enrichment:
-    *  Configure brute-force detection rules
+    * Threat Intelligence Enrichment:
+      - Integrates external APIs:
+        * AbuseIPDB → checks IP reputation and abuse confidence score
+        * VirusTotal → analyzes IP/domain for malicious indicators
+    * Rule-Based Analysis:
+      - Applies conditional logic to classify alerts:
+        * High severity → known malicious IP or repeated attack behavior
+        * Medium/Low severity → suspicious but not confirmed malicious
+    * Response Actions:
+      - Sends alert notification to Slack
+      - Creates incident ticket in Jira with enriched details
+    * This workflow acts as the SOAR-like layer, connecting detection, enrichment, and response in a single pipeline.
+
 6. **Attack Simulation:**
     * Perform repeated failed authentication attempts
     * Simulate credential guessing behavior
