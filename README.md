@@ -239,7 +239,7 @@ Upon triggering an alert:
 | Credential Access | **Brute Force** | T1110.001 |
 | Credential Access | **Password Spraying** | T1110.003 |
 | Initial Access | **Valid Accounts** | T1078 |
-| Lateral Movement | **Remote Services (SMB/RDP)** | T1021 |
+| Execution | **Remote Services (SMB/RDP)** | T1021 |
 | Discovery | **Network Service Scanning** | T1046 |
 
 These MITRE ATT&CK techniques are included as metadata within simulated events and are not fully mapped or visualized in Splunk.
