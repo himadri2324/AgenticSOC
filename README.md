@@ -4,7 +4,13 @@
 ---
 
 ## 🎬 Demonstration
-[![Watch Demo](https://www.youtube.com/watch?v=Neu0MBCNLaE)](https://www.youtube.com/watch?v=Neu0MBCNLaE)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=Neu0MBCNLaE" target="_blank">
+    <img src="https://img.icons8.com/color/96/video.png" alt="Watch Demo" />
+    <br>
+    <strong>Click to watch the demonstration video</strong>
+  </a>
+</p>
 
 ---
 
