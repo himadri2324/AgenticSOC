@@ -121,7 +121,7 @@ This VM acts as the central SOC lab environment where all components are hosted 
     * Defined correlation rules to detect:
       - Multiple failed login attempts
       - Suspicious IP activity
-   * Configured alerts to trigger when thresholds are exceeded
+    * Configured alerts to trigger when thresholds are exceeded
 
 These alerts act as the entry point for automation
 4.  **Log Collection Configuration:**
