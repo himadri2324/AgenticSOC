@@ -25,26 +25,18 @@ This improves operational efficiency, reduces manual effort, and enables faster 
 
 ## 📘 Related Medium Articles
 
-- **AI Agents and the Rise of the Agentic SOC**
+- **AI Agents and the Rise of the Agentic SOC** https://medium.com/@himadrisingh061/ai-agents-and-the-rise-of-the-agentic-soc-f19122b4eca3
 
-https://medium.com/@himadrisingh061/ai-agents-and-the-rise-of-the-agentic-soc-f19122b4eca3
+- **From Zero to Running Server: My Hands-on Journey with Microsoft Azure VM** https://medium.com/@himadrisingh061/from-zero-to-running-server-my-hands-on-journey-with-microsoft-azure-vm-78f6591f24e6
 
-- **From Zero to Running Server: My Hands-on Journey with Microsoft Azure VM**
-https://medium.com/@himadrisingh061/from-zero-to-running-server-my-hands-on-journey-with-microsoft-azure-vm-78f6591f24e6
-
-- **Splunk: Turning Raw Logs into Real Security Intelligence**  
-https://medium.com/@himadrisingh061/splunk-turning-raw-logs-into-real-security-intelligence-8245299120fc
+- **Splunk: Turning Raw Logs into Real Security Intelligence** https://medium.com/@himadrisingh061/splunk-turning-raw-logs-into-real-security-intelligence-8245299120fc
 
 
-- **n8n + AI: Building Smarter Workflows Instead of More Scripts**  
-https://medium.com/@himadrisingh061/n8n-ai-building-smarter-workflows-instead-of-more-scripts-4ee05af77587
+- **n8n + AI: Building Smarter Workflows Instead of More Scripts** https://medium.com/@himadrisingh061/n8n-ai-building-smarter-workflows-instead-of-more-scripts-4ee05af77587
 
-- **Slack in a SOC Environment: Turning Alerts into Real-Time Security Action**
-https://medium.com/@himadrisingh061/slack-in-a-soc-environment-turning-alerts-into-real-time-security-action-4f80e75229e1
+- **Slack in a SOC Environment: Turning Alerts into Real-Time Security Action** https://medium.com/@himadrisingh061/slack-in-a-soc-environment-turning-alerts-into-real-time-security-action-4f80e75229e1
 
-- **Jira: The Backbone of Modern Project Management**
-
-https://medium.com/@himadrisingh061/jira-the-backbone-of-modern-project-management-74f1b732efb1
+- **Jira: The Backbone of Modern Project Management** https://medium.com/@himadrisingh061/jira-the-backbone-of-modern-project-management-74f1b732efb1
 
 ---
 
