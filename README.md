@@ -136,7 +136,10 @@ These alerts act as the entry point for automation
    
 This approach replicates a real SOC environment without requiring external attack traffic.
 
-Python script: 
+**Python Log Generator Script:**
+
+The script used to simulate SOC events and send logs to Splunk via HEC can be accessed below:
+[View Script](./scripts/simulate_attack.py)
 
 4.  **n8n Workflow Automation (Orchestration Layer):** n8n was used as the orchestration engine to automate alert processing and response actions.
 
