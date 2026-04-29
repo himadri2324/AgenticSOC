@@ -81,7 +81,7 @@ This improves operational efficiency, reduces manual effort, and enables faster 
 ### 🖧 **Network Architecture Diagram:**
 <p align="center">
 <img src="https://github.com/himadri2324/AgenticSOC/blob/main/diagrams/Network%20Architecture.png"
-  alt=" Network Architecture Diagram" width="750"/>
+  alt=" Network Architecture Diagram" width="900"/>
   </p>
 High-level architecture showing how logs flow from generation to SIEM detection and automation layers.
 
@@ -90,7 +90,7 @@ High-level architecture showing how logs flow from generation to SIEM detection 
 ### 🏗️ **Architecture Flow Diagram:**
 <p align="center">
   <img src="https://github.com/himadri2324/AgenticSOC/blob/main/diagrams/Architecture%20flow%20diagram.png" 
-       alt="Architecture flow Diagram" width="750"/>
+       alt="Architecture flow Diagram" width="900"/>
 </p>
 End-to-end flow illustrating alert processing, enrichment, and automated response across the SOC pipeline.
 
