@@ -25,24 +25,17 @@ This improves operational efficiency, reduces manual effort, and enables faster 
 
 ## 📘 Related Medium Articles
 
-- **AI Agents and the Rise of the Agentic SOC**
-  * https://medium.com/@himadrisingh061/ai-agents-and-the-rise-of-the-agentic-soc-f19122b4eca3
+- [AI Agents and the Rise of the Agentic SOC](https://medium.com/@himadrisingh061/ai-agents-and-the-rise-of-the-agentic-soc-f19122b4eca3)
 
-- **From Zero to Running Server: My Hands-on Journey with Microsoft Azure VM**
-  * https://medium.com/@himadrisingh061/from-zero-to-running-server-my-hands-on-journey-with-microsoft-azure-vm-78f6591f24e6
+- [From Zero to Running Server: My Hands-on Journey with Microsoft Azure VM](https://medium.com/@himadrisingh061/from-zero-to-running-server-my-hands-on-journey-with-microsoft-azure-vm-78f6591f24e6)
 
-- **Splunk: Turning Raw Logs into Real Security Intelligence**
-  * https://medium.com/@himadrisingh061/splunk-turning-raw-logs-into-real-security-intelligence-8245299120fc
+- [Splunk: Turning Raw Logs into Real Security Intelligence](https://medium.com/@himadrisingh061/splunk-turning-raw-logs-into-real-security-intelligence-8245299120fc)
 
+- [n8n + AI: Building Smarter Workflows Instead of More Scripts](https://medium.com/@himadrisingh061/n8n-ai-building-smarter-workflows-instead-of-more-scripts-4ee05af77587)
 
-- **n8n + AI: Building Smarter Workflows Instead of More Scripts**
-  * https://medium.com/@himadrisingh061/n8n-ai-building-smarter-workflows-instead-of-more-scripts-4ee05af77587
+- [Slack in a SOC Environment: Turning Alerts into Real-Time Security Action](https://medium.com/@himadrisingh061/slack-in-a-soc-environment-turning-alerts-into-real-time-security-action-4f80e75229e1)
 
-- **Slack in a SOC Environment: Turning Alerts into Real-Time Security Action**
-  * https://medium.com/@himadrisingh061/slack-in-a-soc-environment-turning-alerts-into-real-time-security-action-4f80e75229e1
-
-- **Jira: The Backbone of Modern Project Management**
-  * https://medium.com/@himadrisingh061/jira-the-backbone-of-modern-project-management-74f1b732efb1
+- [Jira: The Backbone of Modern Project Management](https://medium.com/@himadrisingh061/jira-the-backbone-of-modern-project-management-74f1b732efb1)
 
 ---
 
@@ -123,7 +116,7 @@ This VM acts as the central SOC lab environment where all components are hosted 
   <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/azure-vm.png" width="900"/>
 </p>
 
-*Ubuntu-based virtual machine where Splunk, n8n, and automation components are deployed.*
+*Azure virtual machine used in the project AgenticSOC.*
 
 2.  **Splunk Setup (SIEM Configuration):** Splunk was used as the core SIEM platform for log ingestion and alert generation. 
 
@@ -132,6 +125,7 @@ This VM acts as the central SOC lab environment where all components are hosted 
     * Configured **HTTP Event Collector (HEC)** for real-time log ingestion
     * Created indexes for storing logs
     * Used **Search Processing Language (SPL)** to analyze logs
+      
     **Detection Logic:**
     * Defined correlation rules to detect:
       - Multiple failed login attempts
@@ -307,7 +301,7 @@ Upon triggering an alert:
 | Credential Access | **Brute Force** | T1110.001 |
 | Credential Access | **Password Spraying** | T1110.003 |
 | Initial Access | **Valid Accounts** | T1078 |
-| Execution | **Remote Services (SMB/RDP)** | T1021 |
+| Execution | **Remote Service Access (SMB/RDP)** | T1021 |
 | Discovery | **Network Service Scanning** | T1046 |
 
 These MITRE ATT&CK techniques are included as metadata within simulated events and are not fully mapped or visualized in Splunk.
