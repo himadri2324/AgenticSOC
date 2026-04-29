@@ -83,7 +83,8 @@ This improves operational efficiency, reduces manual effort, and enables faster 
 <img src="https://github.com/himadri2324/AgenticSOC/blob/main/diagrams/Network%20Architecture.png"
   alt=" Network Architecture Diagram" width="900"/>
   </p>
-High-level architecture showing how logs flow from generation to SIEM detection and automation layers.
+
+**High-level architecture showing how logs flow from generation to SIEM detection and automation layers.*
 
 ---
 
@@ -92,7 +93,8 @@ High-level architecture showing how logs flow from generation to SIEM detection 
   <img src="https://github.com/himadri2324/AgenticSOC/blob/main/diagrams/Architecture%20flow%20diagram.png" 
        alt="Architecture flow Diagram" width="900"/>
 </p>
-End-to-end flow illustrating alert processing, enrichment, and automated response across the SOC pipeline.
+
+**End-to-end flow illustrating alert processing, enrichment, and automated response across the SOC pipeline.*
 
 ---
 
@@ -115,13 +117,13 @@ This VM acts as the central SOC lab environment where all components are hosted 
   <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/azure-resource.png" width="900"/>
 </p>
 
-Azure resource group hosting the SOC lab environment.
+**Azure resource group hosting the SOC lab environment.*
 
 <p align="center">
   <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/azure-vm.png" width="900"/>
 </p>
 
-Ubuntu-based virtual machine where Splunk, n8n, and automation components are deployed.
+**Ubuntu-based virtual machine where Splunk, n8n, and automation components are deployed.*
 
 2.  **Splunk Setup (SIEM Configuration):** Splunk was used as the core SIEM platform for log ingestion and alert generation. 
 
@@ -136,7 +138,23 @@ Ubuntu-based virtual machine where Splunk, n8n, and automation components are de
       - Suspicious IP activity
     * Configured alerts to trigger when thresholds are exceeded
 
-These alerts act as the entry point for automation
+These alerts act as the entry point for automation.
+
+### Splunk Log Ingestion
+
+<p align="center">
+  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/splunk-logs.png" width="900"/>
+</p>
+
+**Structured JSON logs generated via Python are ingested into Splunk using HTTP Event Collector (HEC).*
+
+### Splunk Alert Configuration
+
+<p align="center">
+  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/splunk-alerts.png" width="900"/>
+</p>
+
+**Correlation-based alerts configured in Splunk to detect brute-force, password spraying, and suspicious activity.*
 
 3.  **Log Generation using Python:** A custom Python script was created to simulate security events.
 
@@ -175,6 +193,14 @@ The script used to simulate SOC events and send logs to Splunk via HEC can be ac
 
 This workflow acts as a SOAR-like layer, connecting detection, enrichment, and response.
 
+### 🔄 n8n Automation Workflow
+
+<p align="center">
+  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/n8n-workflow.png" width="900"/>
+</p>
+
+**Workflow handling alert ingestion, enrichment using threat intelligence APIs, and automated response actions.*
+
 5. **Threat Intelligence Integration:** To improve alert context, external threat intelligence services were integrated into the workflow.
 
 **AbuseIPDB:**
@@ -202,6 +228,14 @@ This enrichment step transforms raw alerts into actionable insights, making anal
 
 This ensures SOC teams receive real-time notifications without manually checking SIEM dashboards.
 
+### 📩 Slack Alert Output
+
+<p align="center">
+  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/slack-alert.png" width="900"/>
+</p>
+
+**Real-time alert notification containing enriched threat intelligence and severity classification.*
+
 7. **Jira Integration (Incident Management):** Jira was integrated to maintain structured incident tracking.
 
 **Setup:**
@@ -216,6 +250,14 @@ This ensures SOC teams receive real-time notifications without manually checking
     - Threat intelligence data
 
 This enables proper incident lifecycle management and tracking.
+
+### 🧾 Jira Incident Tickets
+
+<p align="center">
+  <img src="https://github.com/himadri2324/AgenticSOC/blob/main/Screenshots/jira-tickets.png" width="900"/>
+</p>
+
+**Automatically generated incident tickets with alert details, severity, and enrichment data.*
 
 8. **End-to-End Workflow Summary:**
     * Python script generates simulated security logs
