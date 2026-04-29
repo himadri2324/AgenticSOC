@@ -4,13 +4,7 @@
 ---
 
 ## 🎬 Demonstration
-<p align="center">
-  <a href="" target="_blank">
-    <img src="https://studio.youtube.com/video/Neu0MBCNLaE/edit" alt="Watch Demo" />
-    <br>
-    <strong>Click to watch the demonstration video</strong>
-  </a>
-</p>
+[![Watch Demo](https://studio.youtube.com/video/Neu0MBCNLaE/edit)](https://studio.youtube.com/video/Neu0MBCNLaE/edit)
 
 ---
 
